@@ -1,0 +1,23 @@
+div.center {
+    width: 100%;
+    text-align: center;
+}
+
+input#search {
+    width: 50%;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+input#search:focus {
+    box-shadow: aqua;
+}
+
+ul#searchResult {
+    font-size: 1.2em;
+}
+
+label#resultCount {
+    font-size: 1.3em;
+}
+
