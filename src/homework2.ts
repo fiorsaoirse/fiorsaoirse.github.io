@@ -10,6 +10,7 @@ const label: HTMLLabelElement = document.getElementById('resultCount') as HTMLLa
 const getEvent$: Observable<KeyboardEvent> = fromEvent(input, 'keypress') as Observable<KeyboardEvent>;
 
 const renderResponse = (response: IGitResponseInfo) => {
+    ul.innerHTML = "";
     const {incomplete_results, items, total_count} = response;
     if (!incomplete_results) {
         label.textContent = `Всего результатов: ${total_count}`;

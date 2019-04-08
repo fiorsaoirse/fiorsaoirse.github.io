@@ -98,6 +98,7 @@ var ul = document.getElementById('searchResult');
 var label = document.getElementById('resultCount');
 var getEvent$ = rxjs_1.fromEvent(input, 'keypress');
 var renderResponse = function (response) {
+    ul.innerHTML = "";
     var incomplete_results = response.incomplete_results, items = response.items, total_count = response.total_count;
     if (!incomplete_results) {
         label.textContent = "\u0412\u0441\u0435\u0433\u043E \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u043E\u0432: " + total_count;
